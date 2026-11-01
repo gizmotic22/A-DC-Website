@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<!-- HOME PAGE -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&DC Construction Corporation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <a href="homepage.html" class="brand">
+            <img src="pictures/A&DClogo.jpg" alt="A&DC Logo" class="logo">
+            <span class="brand-name">
+                <span>A&DC Construction</span>
+                <span>Corporation</span>
+            </span>
+        </a>
+
+        <nav class="nav-menu">
+            <a href="homepage.html" class="active">HOME</a>
+            <a href="servicepage.html">SERVICES</a>
+            <a href="about_page.html">ABOUT US</a>
+            <a href="projectpage.html">PROJECTS</a>
+            <a href="processpage.html">PROCESS</a>
+            <a href="clientpage.html">CLIENTS</a>
+            <a href="contactpage.html" class="contact-button">CONTACT US</a>
+        </nav>
+    </header>
+
+
+    <main class="home-page">
+        
+<!-- 01. HERO -->
+<section class="home-hero" id="home">
+    <div class="home-hero-image">
+        <img src="pictures/sperry1.jpg"
+             class="hero-slide active"
+             alt="Sperry project">
+
+        <img src="pictures/7luxe1.jpg"
+             class="hero-slide"
+             alt="7Luxe project">
+
+        <img src="pictures/keds1.jpg"
+             class="hero-slide"
+             alt="Keds project">
+
+        <img src="pictures/knauf1.jpg"
+             class="hero-slide"
+             alt="Knauf project">
+
+        <img src="pictures/complex1.jpg"
+             class="hero-slide"
+             alt="Complex project">
+
+        <img src="pictures/krispypapi1.png"
+             class="hero-slide"
+             alt="Krispy Papi project">
+    </div>
+
+    <div class="hero-project-caption">
+            <span>FEATURED PROJECT</span>
+            <h2>A&DC Project Showcase</h2>
+        </div>
+    </div>
+
+
+    <div class="home-hero-content">
+        <p class="home-eyebrow">
+    <span class="home-location-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+            <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+            <circle cx="12" cy="10" r="2.5"></circle>
+        </svg>
+    </span>
+    <span>TAGUIG-BASED GENERAL CONTRACTOR</span>
+</p>
+        <h1>Building Tomorrow's Landmarks Today</h1>
+        <p class="home-description">
+            We deliver construction solutions through quality
+            workmanship, integrity, and commitment to every project.
+        </p>
+       <div class="home-hero-buttons">
+    <a href="contactpage.html" class="home-button home-button-primary">
+        REQUEST A QUOTE <span>↗</span>
+    </a>
+
+    <a href="projectpage.html" class="home-button home-button-secondary">
+        VIEW PROJECTS
+    </a>
+</div>
+    </div>
+</section>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(
+        ".home-hero-image .hero-slide"
+    );
+
+    if (slides.length < 2) return;
+
+    let currentSlide = 0;
+
+    setInterval(function () {
+        slides[currentSlide].classList.remove("active");
+
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        slides[currentSlide].classList.add("active");
+    }, 5000);
+});
+</script>
+
+        
+<!-- 02. COMPANY OVERVIEW / WHO WE ARE -->
+<section class="home-story" id="story">
+
+    <div class="home-story-image">
+        <img src="pictures/constructionhome.jpg"
+             alt="Construction and development">
+    </div>
+
+    <div class="home-story-content">
+
+        <p class="home-eyebrow">
+            <span class="home-eyebrow-number">COMPANY OVERVIEW</span>
+            <span class="home-eyebrow-divider"></span>
+            
+        </p>
+
+        <h2>
+            Building With Purpose.<br>
+            Creating With Integrity.
+        </h2>
+
+        <p>
+            Our company is a professional organization dedicated to
+            delivering high-quality, reliable, and innovative solutions.
+            Built on integrity and excellence, we focus on creating
+            long-term value, fostering trust, and supporting sustainable
+            growth for our clients, partners, and stakeholders.
+        </p>
+
+        
+<a href="about_page.html" class="home-overview-button">
+    LEARN MORE ABOUT US <span aria-hidden="true">↗</span>
+</a>
+
+
+    </div>
+
+</section>
+
+
+<!-- COMPANY STATISTICS -->
+<section class="home-stats" id="company-stats">
+    <div class="home-stats-heading">
+        <p>A&DC AT A GLANCE</p>
+    </div>
+
+    <div class="home-stats-grid">
+        <div class="home-stat">
+            <h2>15+</h2>
+            <p>Years of Combined Experience</p>
+        </div>
+
+        <div class="home-stat">
+            <h2>120+</h2>
+            <p>Projects Delivered</p>
+        </div>
+
+        <div class="home-stat">
+            <h2>40+</h2>
+            <p>Engineers and Tradespeople</p>
+        </div>
+
+        <div class="home-stat">
+            <h2>100%</h2>
+            <p>On-Time Completion</p>
+        </div>
+    </div>
+</section>
+
+        <!-- 03. CORE VALUES -->
+        <section class="home-values" id="values">
+            <div class="home-section-heading">
+                <p class="home-eyebrow">WHAT GUIDES US</p>
+                <h2>Our Core Values</h2>
+                <p>
+                    The principles behind our work, our partnerships,
+                    and the structures we build.
+                </p>
+            </div>
+
+            <div class="home-value-grid">
+                <article class="home-value-card">
+                    <span class="home-card-number">01</span>
+                    <h3>Integrity</h3>
+                    <p>Building trust through honesty and accountability.</p>
+                </article>
+
+                <article class="home-value-card">
+                    <span class="home-card-number">02</span>
+                    <h3>Quality</h3>
+                    <p>Maintaining high standards of workmanship.</p>
+                </article>
+
+                <article class="home-value-card">
+                    <span class="home-card-number">03</span>
+                    <h3>Safety</h3>
+                    <p>Giving importance to safe working practices.</p>
+                </article>
+
+                <article class="home-value-card">
+                    <span class="home-card-number">04</span>
+                    <h3>Professionalism</h3>
+                    <p>Working responsibly and respecting commitments.</p>
+                </article>
+
+                <article class="home-value-card">
+                    <span class="home-card-number">05</span>
+                    <h3>Innovation</h3>
+                    <p>Encouraging improvement through thoughtful solutions.</p>
+                </article>
+
+                <article class="home-value-card">
+                    <span class="home-card-number">06</span>
+                    <h3>Teamwork</h3>
+                    <p>Working together to achieve shared goals.</p>
+                </article>
+
+                <article class="home-value-card">
+                    <span class="home-card-number">07</span>
+                    <h3>Customer Commitment</h3>
+                    <p>Keeping client needs at the center of our work.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- 04. SERVICES -->
+        <section class="home-services" id="services">
+            <div class="home-section-heading">
+                <p class="home-eyebrow">WHAT WE DO</p>
+                <h2>Our Services</h2>
+                <p>
+                    Comprehensive construction solutions for different
+                    project needs and industries.
+                </p>
+            </div>
+
+            <div class="home-service-grid">
+                <a href="servicepage.html" class="home-service-card">
+                    <span class="home-card-number">01 / SERVICE</span>
+                    <h3>Residential Construction</h3>
+                    <span class="home-card-arrow">↗</span>
+                </a>
+
+                <a href="servicepage.html" class="home-service-card">
+                    <span class="home-card-number">02 / SERVICE</span>
+                    <h3>Commercial &amp; Industrial Buildings</h3>
+                    <span class="home-card-arrow">↗</span>
+                </a>
+
+                <a href="servicepage.html"
+                    class="home-service-card">
+                    <span class="home-card-number">03 / SERVICE</span>
+                    <h3>Fit Out Works</h3>
+                    <span class="home-card-arrow">↗</span>
+                </a>
+
+                <a href="servicepage.html" class="home-service-card">
+                    <span class="home-card-number">04 / SERVICE</span>
+                    <h3>Infrastructure Works</h3>
+                    <span class="home-card-arrow">↗</span>
+                </a>
+
+                <a href="servicepage.html" class="home-service-card">
+                    <span class="home-card-number">05 / SERVICE</span>
+                    <h3>Design &amp; Planning</h3>
+                    <span class="home-card-arrow">↗</span>
+                </a>
+
+                <a href="servicepage.html" class="home-service-card">
+                    <span class="home-card-number">06 / SERVICE</span>
+                    <h3>Renovation &amp; Retrofitting</h3>
+                    <span class="home-card-arrow">↗</span>
+                </a>
+            </div>
+        </section>
+
+
+       
+
+<!-- 05. PROJECTS / OUR PORTFOLIO -->
+<section class="home-projects" id="projects">
+
+    <!-- Background image -->
+    <div class="home-projects-background">
+        <img src="pictures/constructionhome.jpg"
+             alt=""
+             aria-hidden="true">
+    </div>
+
+    <!-- Dark overlay -->
+    <div class="home-projects-overlay"></div>
+
+    <!-- Main content -->
+    <div class="home-projects-content">
+
+        <div class="home-projects-heading">
+            <p class="home-eyebrow">OUR PORTFOLIO</p>
+
+            <h2>Projects —<br>Transcending Industries</h2>
+
+            <p class="home-projects-description">
+                Explore a selection of our construction projects,
+                reflecting our expertise across different areas
+                of the industry.
+            </p>
+        </div>
+
+        <!-- Project gallery -->
+        <div class="home-portfolio-grid">
+
+            <a href="projectpage.html" class="home-portfolio-card">
+                <div class="home-portfolio-image">
+                    <img src="pictures/7luxe1.jpg"
+                         alt="Civil and architectural project">
+                    <span class="home-portfolio-arrow" aria-hidden="true">↗</span>
+                </div>
+                <div class="home-portfolio-info">
+                    <p>CIVIL &amp; ARCHITECTURAL</p>
+                    <h3>7Luxe</h3>
+                </div>
+            </a>
+
+            <a href="projectpage.html" class="home-portfolio-card">
+                <div class="home-portfolio-image">
+                    <img src="pictures/krispypapi1.png"
+                         alt="Mechanical project">
+                    <span class="home-portfolio-arrow" aria-hidden="true">↗</span>
+                </div>
+                <div class="home-portfolio-info">
+                    <p>MECHANICAL</p>
+                    <h3>krispy Papi</h3>
+                </div>
+            </a>
+
+            <a href="projectpage.html" class="home-portfolio-card">
+                <div class="home-portfolio-image">
+                    <img src="pictures/keds1.jpg"
+                         alt="Electrical project">
+                    <span class="home-portfolio-arrow" aria-hidden="true">↗</span>
+                </div>
+                <div class="home-portfolio-info">
+                    <p>ELECTRICAL</p>
+                    <h3>Keds</h3>
+                </div>
+            </a>
+
+            <a href="projectpage.html" class="home-portfolio-card">
+                <div class="home-portfolio-image">
+                    <img src="pictures/knauf1.jpg"
+                         alt="Fit-out project">
+                    <span class="home-portfolio-arrow" aria-hidden="true">↗</span>
+                </div>
+                <div class="home-portfolio-info">
+                    <p>FIT-OUT</p>
+                    <h3>Knauf</h3>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="home-projects-footer">
+            <a href="projectpage.html" class="home-button">
+                VIEW ALL PROJECTS <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+        <!-- CLOSING CONTACT -->
+        <section class="home-contact">
+            <div>
+                <p class="home-eyebrow">LET'S BUILD TOGETHER</p>
+                <h2>Have a project in mind?</h2>
+            </div>
+
+            <a href="contactpage.html" class="home-button">
+                CONTACT US <span>↗</span>
+            </a>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="home-footer">
+        <p>&copy; 2026 A&amp;DC Construction Corporation. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
