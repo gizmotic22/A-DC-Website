@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<!-- PROJECTS PAGE -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | A&DC Construction Corporation</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body class="project-page">
+
+    <!-- NAVIGATION BAR: MATCHES THE ABOUT PAGE -->
+    <header class="navbar">
+
+        <a href="homepage.html" class="brand">
+        <img src="pictures/A&DClogo.jpg" alt="A&DC Logo" class="logo">
+        <span class="brand-name">
+        <span>A&DC Construction</span>
+        <span>Corporation</span>
+    </span>
+</a>
+        <nav class="nav-menu">
+            <a href="homepage.html">HOME</a>
+            <a href="homepage.html#services">SERVICES</a>
+            <a href="about_page.html">ABOUT US</a>
+            <a href="projectpage.html" class="active">PROJECTS</a>
+            <a href="processpage.html">PROCESS</a>
+            <a href="clientpage.html">CLIENTS</a>
+            <a href="contactpage.html" class="contact-button">CONTACT US</a>
+        </nav>
+    </header>
+
+    <!-- PROJECT INTRODUCTION -->
+    <section class="portfolio-intro">
+        <p class="portfolio-label"> OUR PORTFOLIO</p>
+
+        <h1>Selected Work</h1>
+
+        <div class="portfolio-heading-row">
+            <p class="portfolio-tagline">
+                Projects that reflect our standards.
+            </p>
+
+            <!-- CATEGORY FILTERS -->
+            <div class="portfolio-filters">
+                <button class="portfolio-filter active"
+                        type="button"
+                        data-category="all"
+                        aria-pressed="true">
+                    All
+                </button>
+
+                <button class="portfolio-filter"
+                        type="button"
+                        data-category="civil"
+                        aria-pressed="false">
+                    Civil &amp; Architectural
+                </button>
+
+                <button class="portfolio-filter"
+                        type="button"
+                        data-category="mechanical"
+                        aria-pressed="false">
+                    Mechanical
+                </button>
+
+                <button class="portfolio-filter"
+                        type="button"
+                        data-category="electrical"
+                        aria-pressed="false">
+                    Electrical
+                </button>
+
+                <button class="portfolio-filter"
+                        type="button"
+                        data-category="fitout"
+                        aria-pressed="false">
+                    Fit-out
+                </button>
+            </div>
+        </div>
+
+        <p class="portfolio-description">
+            Explore a selection of construction projects that
+            demonstrate our approach to planning, workmanship,
+            and project delivery. Each project represents a
+            different scope of work and set of requirements.
+        </p>
+    </section>
+
+    <!-- PROJECT GALLERY -->
+    <main class="portfolio-gallery">
+        <div class="portfolio-grid">
+
+            <!-- PROJECT 1 -->
+            <article class="portfolio-card"
+         data-category="fitout"
+         data-description="Interior fit-out works for a retail store, including product display 
+         areas, shelving, counters, and interior finishes designed to showcase footwear and 
+         accessories.">
+                <img src="pictures/sperry1.jpg"
+                     alt="Sperry retail fit-out project">
+
+                <div class="portfolio-card-info">
+                    <p class="portfolio-category">Fit-out</p>
+                    <h2>Sperry</h2>
+                    <p class="portfolio-location">Metro Manila</p>
+                </div>
+            </article>
+
+            <!-- PROJECT 2 -->
+            <article class="portfolio-card" 
+                data-category="civil"
+                data-description="Retail interior construction and finishing, 
+                with an emphasis on organized product displays, customer circulation, 
+                lighting, and a polished shopping environment.">
+                <img src="pictures/7luxe1.jpg"
+                     alt="Mixed-use commercial building">
+
+                <div class="portfolio-card-info">
+                    <p class="portfolio-category">
+                        Civil &amp; Architectural
+                    </p>
+                    <h2>7luxe</h2>
+                    <p class="portfolio-location">Taguig City</p>
+                </div>
+            </article>
+
+            <!-- PROJECT 3 -->
+            <article class="portfolio-card" 
+                data-category="electrical"
+                data-description="Retail fit-out works involving 
+                footwear display fixtures, shelving, customer areas, 
+                and interior finishes to create an accessible and welcoming store layout.">
+                <img src="pictures/keds1.jpg"
+                     alt="Electrical construction project">
+
+                <div class="portfolio-card-info">
+                    <p class="portfolio-category">Electrical</p>
+                    <h2>Keds</h2>
+                    <p class="portfolio-location">Taguig City</p>
+                </div>
+            </article>
+
+            <!-- PROJECT 4 -->
+            <article class="portfolio-card" 
+                data-category="fitout"
+                data-description="Commercial space preparation and finishing, 
+                with potential display or presentation areas for building materials and related products.">
+                <img src="pictures/knauf1.jpg"
+                     alt="Fit-out construction project">
+
+                <div class="portfolio-card-info">
+                    <p class="portfolio-category">Fit-out</p>
+                    <h2>Knauf</h2>
+                    <p class="portfolio-location">Quezon City</p>
+                </div>
+            </article>
+
+            <!-- PROJECT 5 -->
+            <article class="portfolio-card" 
+            data-category="civil"
+                data-description="Retail interior fit-out featuring product display areas, shelving, lighting, 
+                and finishing work intended to support the store's layout and shopping experience.">
+                <img src="pictures/complex1.jpg"
+                     alt="Civil and architectural construction project">
+
+                <div class="portfolio-card-info">
+                    <p class="portfolio-category">
+                        Civil &amp; Architectural
+                    </p>
+                    <h2>Complex</h2>
+                    <p class="portfolio-location">Quezon City</p>
+                </div>
+            </article>
+
+            <!-- PROJECT 6 -->
+            <article class="portfolio-card" 
+            data-category="mechanical"
+            data-category="civil"
+                data-description="Restaurant interior fit-out involving customer seating, 
+                service counter areas, interior finishes, and space planning to accommodate 
+                dining and food-service operations.">
+                <img src="pictures/krispypapi1.png"
+                     alt="Mechanical construction project">
+
+                <div class="portfolio-card-info">
+                    <p class="portfolio-category">Mechanical</p>
+                    <h2>Krispy Papi</h2>
+                    <p class="portfolio-location">Parañaque City</p>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    
+    <!-- PROJECT DETAILS POP-UP -->
+    <div class="project-modal" id="projectModal" hidden>
+        <div class="project-modal-content"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="modalTitle">
+
+            <button class="project-modal-close"
+                    type="button"
+                    aria-label="Close project details">
+                &times;
+            </button>
+
+            <div class="project-modal-image">
+                <img id="modalImage" src="" alt="">
+            </div>
+
+            <div class="project-modal-info">
+                <p class="portfolio-category" id="modalCategory"></p>
+                <h2 id="modalTitle"></h2>
+                <p class="project-modal-location" id="modalLocation"></p>
+
+                <div class="project-modal-divider"></div>
+
+                <h3>Project Overview</h3>
+                <p id="modalDescription">
+                    More information about this project will be added soon.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+    <script>
+        // CATEGORY FILTER FUNCTIONALITY
+        const portfolioFilters =
+            document.querySelectorAll(".portfolio-filter");
+
+        const portfolioCards =
+            document.querySelectorAll(".portfolio-card");
+
+        portfolioFilters.forEach(function(button) {
+            button.addEventListener("click", function() {
+                const selectedCategory = button.dataset.category;
+
+                portfolioFilters.forEach(function(filter) {
+                    filter.classList.remove("active");
+                    filter.setAttribute("aria-pressed", "false");
+                });
+
+                button.classList.add("active");
+                button.setAttribute("aria-pressed", "true");
+
+                portfolioCards.forEach(function(card) {
+                    const matchesCategory =
+                        selectedCategory === "all" ||
+                        card.dataset.category === selectedCategory;
+
+                    card.hidden = !matchesCategory;
+                });
+            });
+        });
+
+        
+        // SELECT CATEGORY FROM URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const requestedCategory = urlParams.get("category");
+
+        if (requestedCategory) {
+            const matchingFilter = Array.from(portfolioFilters).find(
+                function(button) {
+                    return button.dataset.category === requestedCategory;
+                }
+            );
+
+            if (matchingFilter) {
+                matchingFilter.click();
+            }
+        }
+
+        // PROJECT DETAILS POP-UP FUNCTIONALITY
+        const projectModal =
+            document.getElementById("projectModal");
+
+        const modalImage =
+            document.getElementById("modalImage");
+
+        const modalTitle =
+            document.getElementById("modalTitle");
+
+        const modalCategory =
+            document.getElementById("modalCategory");
+
+        const modalLocation =
+            document.getElementById("modalLocation");
+
+        const modalDescription =
+            document.getElementById("modalDescription");
+
+        const closeModalButton =
+            document.querySelector(".project-modal-close");
+
+        let previousFocusedElement = null;
+
+        // Open the pop-up when a project card is clicked.
+        portfolioCards.forEach(function(card) {
+            card.setAttribute("tabindex", "0");
+            card.setAttribute("role", "button");
+            card.setAttribute(
+                "aria-label",
+                "View details for " +
+                card.querySelector("h2").textContent.trim()
+            );
+
+            function openProjectModal() {
+                const image = card.querySelector("img");
+                const title = card.querySelector("h2");
+                const category =
+                    card.querySelector(".portfolio-category");
+                const location =
+                    card.querySelector(".portfolio-location");
+
+                previousFocusedElement = card;
+
+                modalImage.src = image.src;
+                modalImage.alt = image.alt;
+                modalTitle.textContent = title.textContent.trim();
+                modalCategory.textContent =
+                    category.textContent.trim();
+                modalLocation.textContent =
+                    location.textContent.trim();
+
+                modalDescription.textContent =
+                    card.dataset.description ||
+                    "More information about this project will be added soon.";
+
+                projectModal.hidden = false;
+                document.body.style.overflow = "hidden";
+                closeModalButton.focus();
+            }
+
+            card.addEventListener("click", openProjectModal);
+
+            // Also allow keyboard users to open a project.
+            card.addEventListener("keydown", function(event) {
+                if (
+                    event.target === card &&
+                    (event.key === "Enter" || event.key === " ")
+                ) {
+                    event.preventDefault();
+                    openProjectModal();
+                }
+            });
+        });
+
+        // Close the pop-up and restore the previous focus.
+        function closeProjectModal() {
+            projectModal.hidden = true;
+            document.body.style.overflow = "";
+
+            if (previousFocusedElement) {
+                previousFocusedElement.focus();
+            }
+        }
+
+        closeModalButton.addEventListener(
+            "click",
+            closeProjectModal
+        );
+
+        // Close when clicking the dark background.
+        projectModal.addEventListener("click", function(event) {
+            if (event.target === projectModal) {
+                closeProjectModal();
+            }
+        });
+
+        // Close when pressing Escape.
+        document.addEventListener("keydown", function(event) {
+            if (
+                event.key === "Escape" &&
+                !projectModal.hidden
+            ) {
+                closeProjectModal();
+            }
+        });
+    </script>
+
+    <!-- FOOTER -->
+    <footer class="home-footer">
+        <p>&copy; 2026 A&amp;DC Construction Corporation. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
