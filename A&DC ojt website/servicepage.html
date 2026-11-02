@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <!-- SERVICES PAGE -->
 <html lang="en">
@@ -14,6 +13,7 @@
 
 <body class="services-page">
 
+    <!-- NAVBAR -->
     <header class="navbar">
         <a href="homepage.html" class="brand">
             <img src="pictures/A&DClogo.jpg" alt="A&DC Logo" class="logo">
@@ -36,131 +36,185 @@
 
     <!-- SERVICES HERO -->
     <section class="services-hero">
-        <p class="services-eyebrow">A&DC CONSTRUCTION CORPORATION</p>
+        <p class="services-eyebrow">A&amp;DC CONSTRUCTION CORPORATION</p>
         <h1>Our Services</h1>
         <p>
-            Building spaces and structures through construction,
-            planning, and development services.
+            Integrated construction services covering civil and architectural,
+            mechanical, electrical, and interior fit-out works.
         </p>
     </section>
 
-    <!-- SERVICES CONTENT / WHAT WE DO -->
-    <main class="services-content">
+    <main>
 
-        <div class="services-heading">
-            <p class="services-eyebrow">WHAT WE DO</p>
-            <h2>Construction Solutions</h2>
-            <p>Explore our range of construction and development services.</p>
-        </div>
+        <!-- SERVICE OVERVIEW -->
+        <section class="services-content">
 
-        <div class="services-grid">
+            <div class="services-heading">
+                <p class="services-eyebrow">WHAT WE DO</p>
+                <h2>Construction Solutions</h2>
+                <p>
+                    Explore the key areas of work supported by our team
+                    and technical capabilities.
+                </p>
+            </div>
 
-            <!-- 01 RESIDENTIAL CONSTRUCTION -->
-            <article class="service-card">
-                <img
-                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80"
-                    alt="Modern residential property"
-                    loading="lazy">
+            <div class="services-grid">
 
-                <div class="service-card-content">
+                <a href="#civil" class="service-card">
                     <span class="service-number">01</span>
-                    <h3>Residential Construction</h3>
-                    <p>
-                        Construction of residential properties designed
-                        around practical living spaces and homeowners' needs.
-                    </p>
-                </div>
-            </article>
+                    <h3>Civil &amp; Architectural Works</h3>
+                    <span class="service-card-arrow">↗</span>
+                </a>
 
-            <!-- 02 COMMERCIAL & INDUSTRIAL -->
-            <article class="service-card">
-                <img
-                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80"
-                    alt="Modern commercial building"
-                    loading="lazy">
-
-                <div class="service-card-content">
+                <a href="#mechanical" class="service-card">
                     <span class="service-number">02</span>
-                    <h3>Commercial &amp; Industrial</h3>
-                    <p>
-                        Construction for commercial establishments
-                        and industrial facilities.
-                    </p>
-                </div>
-            </article>
+                    <h3>Mechanical Works</h3>
+                    <span class="service-card-arrow">↗</span>
+                </a>
 
-            <!-- 03 FIT OUT WORKS -->
-            <article class="service-card">
-                <img
-                    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
-                    alt="Finished modern interior"
-                    loading="lazy">
-
-                <div class="service-card-content">
+                <a href="#electrical" class="service-card">
                     <span class="service-number">03</span>
-                    <h3>Fit Out Works</h3>
-                    <p>
-                        Interior construction and finishing to prepare
-                        spaces for their intended use.
-                    </p>
-                </div>
-            </article>
+                    <h3>Electrical Works</h3>
+                    <span class="service-card-arrow">↗</span>
+                </a>
 
-            <!-- 04 INFRASTRUCTURE -->
-            <article class="service-card">
-                <img
-                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80"
-                    alt="Construction site"
-                    loading="lazy">
-
-                <div class="service-card-content">
+                <a href="#fitout" class="service-card">
                     <span class="service-number">04</span>
-                    <h3>Infrastructure</h3>
-                    <p>
-                        Construction work for infrastructure and
-                        civil development projects.
-                    </p>
+                    <h3>Interior Fit-Out Works</h3>
+                    <span class="service-card-arrow">↗</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- DETAILED SERVICES -->
+        <section class="service-details">
+
+            <!-- 01 - CIVIL AND ARCHITECTURAL -->
+            <article class="service-detail" id="civil">
+
+                <div class="service-detail-image">
+                    <img src="pictures/constructionhome.jpg"
+                         alt="Civil and architectural construction works"
+                         loading="lazy">
                 </div>
+
+                <div class="service-detail-content">
+                    <span class="service-number">01 / OUR SERVICES</span>
+                    <h2>Civil &amp; Architectural Works</h2>
+                    <p class="service-detail-intro">
+                        A range of civil and architectural construction works,
+                        from structural components to building finishes and installations.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>Masonry works</li>
+                        <li>Roof truss and framing, roofing, flashings, and rain gutters</li>
+                        <li>Structural concrete, including steel reinforcements, formworks, structural steel, miscellaneous metal, and anchorages</li>
+                        <li>Waterproofing services</li>
+                        <li>Installation of wooden, steel, and glass doors, as well as fixed, awning, and sliding windows</li>
+                        <li>Interior, cabinetry, and exterior painting works</li>
+                        <li>Concrete finishes, tiling, wall finishes, and ceiling works</li>
+                        <li>Construction of drywalls and partitions</li>
+                        <li>Hardware installation</li>
+                        <li>Aluminum Composite Panel (ACP) installation</li>
+                    </ul>
+                </div>
+
             </article>
 
-            <!-- 05 DESIGN & PLANNING -->
-            <article class="service-card">
-                <img
-                    src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80"
-                    alt="Architectural planning"
-                    loading="lazy">
+            <!-- 02 - MECHANICAL -->
+            <article class="service-detail service-detail-reverse" id="mechanical">
 
-                <div class="service-card-content">
-                    <span class="service-number">05</span>
-                    <h3>Design &amp; Planning</h3>
-                    <p>
-                        Planning and design coordination to help prepare
-                        construction projects.
-                    </p>
+                <div class="service-detail-image">
+                    <img src="pictures/construction-supervision.jpg"
+                         alt="Mechanical and building systems installation"
+                         loading="lazy">
                 </div>
+
+                <div class="service-detail-content">
+                    <span class="service-number">02 / OUR SERVICES</span>
+                    <h2>Mechanical Works</h2>
+                    <p class="service-detail-intro">
+                        Mechanical works involving the manufacture and installation
+                        of automated and mechanical systems.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>Manufacture of items and installation of automated and mechanical systems</li>
+                        <li>Provision and installation of fire sprinkler systems</li>
+                        <li>Fire Detection and Alarm System (FDAS)</li>
+                        <li>HVAC installation</li>
+                        <li>Piping and ducting works</li>
+                        <li>Gas works</li>
+                    </ul>
+                </div>
+
             </article>
 
-            <!-- 06 RENOVATION & RETROFITTING -->
-            <article class="service-card">
-                <img
-                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80"
-                    alt="Building construction and improvement"
-                    loading="lazy">
+            <!-- 03 - ELECTRICAL -->
+            <article class="service-detail" id="electrical">
 
-                <div class="service-card-content">
-                    <span class="service-number">06</span>
-                    <h3>Renovation &amp; Retrofitting</h3>
-                    <p>
-                        Improvements and modifications to existing
-                        buildings and spaces.
-                    </p>
+                <div class="service-detail-image">
+                    <img src="pictures/designplanning.png"
+                         alt="Electrical and engineering works"
+                         loading="lazy">
                 </div>
+
+                <div class="service-detail-content">
+                    <span class="service-number">03 / OUR SERVICES</span>
+                    <h2>Electrical Works</h2>
+                    <p class="service-detail-intro">
+                        Electrical installation and related works for lighting,
+                        power distribution, and building electrical systems.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>Electrical wiring and cabling for lights and power supply</li>
+                        <li>Service entrance and meter connections</li>
+                        <li>Provision and installation of lighting fixtures, switches, receptacles, and outlets</li>
+                        <li>Grounding system</li>
+                        <li>Conduit systems and junction boxes</li>
+                        <li>Panel boards</li>
+                        <li>Provision and installation of emergency lights and illuminated exit signs</li>
+                        <li>Other related electrical works</li>
+                    </ul>
+                </div>
+
             </article>
 
-        </div>
-    </main>
+            <!-- 04 - INTERIOR FIT-OUT -->
+            <article class="service-detail service-detail-reverse" id="fitout">
 
-    <!-- CLOSING CONTACT -->
+                <div class="service-detail-image">
+                    <img src="pictures/7luxe1.jpg"
+                         alt="Completed commercial interior fit-out"
+                         loading="lazy">
+                </div>
+
+                <div class="service-detail-content">
+                    <span class="service-number">04 / OUR SERVICES</span>
+                    <h2>Interior Fit-Out Works</h2>
+                    <p class="service-detail-intro">
+                        Interior fitting-out services for individual spaces
+                        and complete structural renovations.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>Interior fitting-out of a single area or renovation of an entire structure</li>
+                        <li>Fundamental design for adaptive reuse</li>
+                        <li>Fit-out works for commercial tenants</li>
+                        <li>Home renovation</li>
+                        <li>Installation of necessary building services</li>
+                        <li>Installation of ceilings, floors, furnishings, and partitions</li>
+                    </ul>
+                </div>
+
+            </article>
+
+        </section>
+
+        <!-- CLOSING CONTACT -->
         <section class="home-contact">
             <div>
                 <p class="home-eyebrow">LET'S BUILD TOGETHER</p>
